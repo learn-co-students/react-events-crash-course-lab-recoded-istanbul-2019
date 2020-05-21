@@ -27,8 +27,8 @@ describe('<ChromeBoisDomain />', () => {
   
   it('invokes the `drawChromeBoiAtCoords` method within `handleMouseMove`, passing the captured x and y values of the mouse from the event', () => {
     const event = {
-      xArg: 33,
-      yArg: 44
+      clientX: 33,
+      clientY: 44
     }
     instance.handleMouseMove(event)
     const [x, y] = drawChromeBoiAtCoords.getCall(0).args

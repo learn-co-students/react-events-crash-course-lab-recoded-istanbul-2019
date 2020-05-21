@@ -5,8 +5,8 @@ import { drawChromeBoiAtCoords, toggleCycling, resize } from './canvasHelpers.js
 export default class ChromeBoisDomain extends Component {
   
   handleMouseMove = (event) => {
-    const x = event.xArg;
-    const y = event.yArg;
+    const x = event.clientX;
+    const y = event.clientY;
     drawChromeBoiAtCoords(x, y);
     /* TODO: This method should capture the `x` and `y` coordinates of the mouse
      * from the event and use them to invoke the `drawChromeBoiAtCoords`
